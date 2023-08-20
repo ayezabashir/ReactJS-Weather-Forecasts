@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react"
 import { AsyncPaginate } from "react-select-async-paginate"
 import { options, url } from "../../api";
@@ -9,7 +10,14 @@ const Search = ({ onSearchChange }) => {
         try {
             const response = await fetch(`${url}?minPopulation=1000000&namePrefix=${inputValue}`, options);
             const result = await response.json();
-            console.log(result);
+            return {
+                options: result.data.map(city => {
+                    return {
+                        value: `${city.latitude} ${city.longitude}`,
+                        label: `${city.name}, ${city.countryCode}`,
+                    }
+                })
+            }
         } catch (error) {
             console.error(error);
         }
