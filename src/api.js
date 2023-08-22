@@ -7,5 +7,5 @@ export const options = {
     }
 };
 
-export const weather_api_url = 'https://api.openweathermap.org/data/2.5/weather';
+export const weather_api_url = 'https://api.openweathermap.org/data/2.5';
 export const weather_api_key = 'b53fd676c39b2a23c8fd49807ca836dd';
