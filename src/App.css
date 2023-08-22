@@ -45,11 +45,12 @@
         width: auto;
         letter-spacing: -5px;
         margin: 10px 0;
+        margin-right: 20px;
       }
 
       .details {
-        width: 100%;
-        padding-left: 20px;
+        width: 50%;
+        padding-right: 20px;
 
         .row {
           display: flex;
