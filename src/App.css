@@ -79,3 +79,60 @@
     }
   }
 }
+.forecast {
+  max-width: 90vw;
+  margin: 20px auto;
+
+  .label {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .daily-item {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+
+    .forecast-icon {
+      width: 40px;
+    }
+    .days {
+      color: #222;
+      flex: 1 1;
+      font-weight: 500;
+      margin-left: 20px;
+    }
+    .description {
+      flex: 1 1;
+      margin-right: 20px;
+      text-align: right;
+    }
+    .min-max {
+      color: #999;
+    }
+  }
+
+  .daily-details {
+    grid-row-gap: 0;
+    row-gap: 0;
+    grid-column-gap: 15px;
+    column-gap: 15px;
+    display: grid;
+    flex-direction: 1 1;
+    grid-template-columns: auto auto;
+    padding: 5px 15px;
+    .daily-details-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 30px;
+      .detail-label {
+        color: #999;
+      }
+    }
+  }
+}
